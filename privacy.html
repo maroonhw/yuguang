@@ -1,86 +1,280 @@
 <!DOCTYPE html>
-  <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>予光 · 隐私政策</title>
-    <style>
-      body { font-family: -apple-system, "PingFang SC", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; color: #1c1c1e; line-height: 1.8; }
-      h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
-      .date { color: #8e8e93; font-size: 14px; margin-bottom: 32px; }
-      h2 { font-size: 17px; font-weight: 600; margin-top: 32px; }
-      p, li { font-size: 15px; color: #3a3a3c; }
-      ul { padding-left: 20px; }
-      a { color: #007aff; text-decoration: none; }
-      table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
-      th, td { border: 1px solid #d1d1d6; padding: 8px 12px; text-align: left; }
-      th { background: #f2f2f7; font-weight: 600; }
-    </style>
-  </head>
-  <body>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>予光 · 隐私政策</title>
+  <style>
+    body { font-family: -apple-system, "PingFang SC", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; color: #1c1c1e; line-height: 1.8; }
+    h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+    .date { color: #8e8e93; font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 17px; font-weight: 600; margin-top: 32px; }
+    h3 { font-size: 16px; font-weight: 600; margin-top: 20px; color: #1c1c1e; }
+    p, li { font-size: 15px; color: #3a3a3c; }
+    ul { padding-left: 20px; }
+    a { color: #007aff; text-decoration: none; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+    th, td { border: 1px solid #d1d1d6; padding: 8px 12px; text-align: left; vertical-align: top; }
+    th { background: #f2f2f7; font-weight: 600; }
+    blockquote { border-left: 3px solid #ffc107; background: #fff8e1; margin: 16px 0; padding: 12px 16px; color: #5d4037; font-size: 14px; }
+    blockquote.note { border-left-color: #007aff; background: #e7f3ff; color: #003766; }
+    .nope { color: #d70015; font-weight: 600; }
+    code { background: #f2f2f7; padding: 1px 6px; border-radius: 4px; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 13px; }
+  </style>
+</head>
+<body>
 
-  <h1>予光隐私政策</h1>
-  <p class="date">最后更新：2026 年 4 月 25 日 &nbsp;·&nbsp; 生效日期：2026 年 4 月 25 日</p>
+<h1>予光隐私政策</h1>
+<p class="date">最后更新:2026-05-14 &nbsp;·&nbsp; 生效日期:2026-05-14</p>
 
-  <p>予光（以下简称「我们」或「本应用」）是一款私密消息应用，允许你向好友发送文字与图片消息。我们深知隐私的重要性，本政策将说明我们如何收集、使用和保护你的个人信息。</p>
+<p>予光("我们")尊重并保护用户的隐私。本《隐私政策》说明我们在您使用予光 iOS 应用程序("本服务")时如何收集、使用、储存、保护您的个人信息,以及您享有的权利。</p>
 
-  <h2>一、我们收集的信息</h2>
-  <table>
-    <tr><th>信息类型</th><th>具体内容</th><th>收集方式</th></tr>
-    <tr><td>账号信息</td><td>Apple ID 子标识（不含邮箱 / 真实姓名）</td><td>Apple 登录授权</td></tr>
-    <tr><td>个人资料</td><td>昵称、头像</td><td>用户主动填写</td></tr>
-    <tr><td>消息内容</td><td>你发送的文字、图片（加密存储，仅收件人可读）</td><td>用户主动发送</td></tr>
-    <tr><td>联系人关系</td><td>通过邀请码建立的好友关系（不读取系统通讯录）</td><td>用户主动添加</td></tr>
-    <tr><td>设备标识</td><td>推送令牌（Device Token，用于推送通知）</td><td>系统自动生成</td></tr>
-  </table>
-  <p>我们不收集你的位置信息、系统通讯录、浏览记录或任何与本应用功能无关的信息。</p>
+<p><strong>核心原则:</strong></p>
+<ul>
+  <li><strong>尽量少收集</strong> —— 只取功能必需的最少字段;</li>
+  <li><strong>不卖、不共享、不追踪</strong> —— 不向任何第三方出售/共享您的个人信息;不接入广告、分析、追踪 SDK;</li>
+  <li><strong>不读</strong> —— 服务端虽存储消息内容,但<strong>我们承诺不主动读取</strong>,除非您主动举报、或执法机关合法要求;</li>
+  <li><strong>本地审核</strong> —— 图片合规检测全部在您设备本地完成,图片不离开您的设备。</li>
+</ul>
 
-  <h2>二、信息的使用目的</h2>
-  <ul>
-    <li>提供核心功能：账号注册与登录、消息发送与接收、好友关系管理</li>
-    <li>推送通知：当你有新消息时发送提醒</li>
-    <li>安全防护：检测异常登录、防止滥用</li>
-    <li>功能改进：分析崩溃日志（不含个人内容）</li>
-  </ul>
-  <p>我们不会将你的信息用于广告投放或出售给任何第三方。</p>
+<p>请您在使用本服务前完整阅读本政策。<strong>一旦您开始使用本服务,即视为您同意本政策。</strong> 如果您不同意,请停止使用并卸载本服务。</p>
 
-  <h2>三、信息的存储与安全</h2>
-  <ul>
-    <li><strong>存储地点：</strong>数据存储于腾讯云（中国大陆，上海地区），符合中华人民共和国数据本地化要求。</li>
-    <li><strong>加密传输：</strong>所有网络请求均使用 HTTPS/TLS 加密。</li>
-    <li><strong>消息加密：</strong>消息内容在服务端加密存储，仅对收件人解密呈现。</li>
-    <li><strong>存储期限：</strong>消息内容在双方删除后 30 天内从服务器彻底删除；账号注销后 7 天宽限期结束时，所有数据永久删除。</li>
-  </ul>
+<blockquote>
+  <strong>⚠️ 关于"端到端加密"的说明</strong><br/>
+  予光早期版本(2026-04 之前)规划过端到端加密(E2E),后因技术与运营平衡的考虑取消;本版本(1.0)消息内容<strong>明文存储</strong>于服务端数据库。我们以"承诺 + 制度"替代"密码学保证":不会主动读取,但技术上可读。本政策据实告知。
+</blockquote>
 
-  <h2>四、信息共享</h2>
-  <p>我们不会与任何第三方共享你的个人信息，以下情形除外：</p>
-  <ul>
-    <li><strong>基础设施服务商：</strong>腾讯云提供云存储和计算服务，仅在提供服务必要范围内访问数据，受保密协议约束。</li>
-    <li><strong>苹果推送服务（APNs）：</strong>向你的设备发送通知时，设备令牌会经由 Apple 服务器中转，不含消息内容。</li>
-    <li><strong>法律要求：</strong>在法律法规明确要求时，我们可能依法披露必要信息。</li>
-  </ul>
+<h2>一、我们是谁</h2>
+<ul>
+  <li>本服务运营方:<strong>(待补:运营公司或开发者实名,与 App Store Connect 一致)</strong></li>
+  <li>本政策的解释权 / 联系方式:见 §11</li>
+  <li>数据存储位置:<strong>中国上海</strong>(腾讯云开发服务 / CloudBase)</li>
+</ul>
 
-  <h2>五、你的权利</h2>
-  <p>依据《个人信息保护法》，你享有以下权利：</p>
-  <ul>
-    <li><strong>查阅与导出：</strong>在「我 → 编辑资料」中查看并导出你的个人资料。</li>
-    <li><strong>更正：</strong>随时在「编辑资料」中修改昵称和头像。</li>
-    <li><strong>删除与注销：</strong>在「我 → 注销账号」中提交注销申请，7 天宽限期后所有数据将被永久删除。</li>
-    <li><strong>撤回同意：</strong>可随时在系统设置中关闭通知权限或相机权限。</li>
-  </ul>
-  <p>如需行使上述权利或有其他疑问，请联系：<br>
-  <a href="mailto:sealmateapp@163.com">sealmateapp@163.com</a></p>
+<h2>二、我们收集什么 / 用途</h2>
 
-  <h2>六、未成年人保护</h2>
-  <p>本应用不面向 14 周岁以下未成年人。若我们发现误收集了未成年人信息，将立即删除。</p>
+<h3>2.1 注册必需(无此信息无法使用本服务)</h3>
+<table>
+  <tr><th>信息</th><th>用途</th><th>储存形式</th><th>法律依据(PIPL)</th></tr>
+  <tr><td>Apple ID 子标识(<code>sub</code> claim)</td><td>与您的予光账号绑定,识别身份</td><td>服务端,HTTPS 传输</td><td>履行合同所必需</td></tr>
+  <tr><td>设备标识(派生 ID,非 IDFA)</td><td>区分您的多个设备,推送送达</td><td>服务端</td><td>履行合同所必需</td></tr>
+  <tr><td>APNs 推送令牌</td><td>接收消息推送</td><td>服务端;账号注销立即清除</td><td>履行合同所必需(可在系统设置关闭推送)</td></tr>
+</table>
 
-  <h2>七、隐私政策的更新</h2>
-  <p>政策更新时，我们将通过应用内通知或更新本页面告知。继续使用本应用即视为同意更新后的政策。</p>
+<p><strong>我们不收集</strong>:您的 Apple ID 邮箱、真实姓名、电话号码、IDFA、生物特征、身份证号、银行账号。Apple Sign-In 可以选择"隐藏邮箱",我们也只取 <code>sub</code> 字段,不读 email/name。</p>
 
-  <h2>八、联系我们</h2>
-  <p>如有隐私相关问题，请联系：<br>
-  邮箱：<a href="mailto:sealmateapp@163.com">sealmateapp@163.com</a><br>
-  我们将在 15 个工作日内回复。</p>
+<h3>2.2 您主动提供(可选)</h3>
+<table>
+  <tr><th>信息</th><th>用途</th><th>您的控制</th></tr>
+  <tr><td>昵称</td><td>在您的联系人之间显示</td><td>默认「新朋友」,可在「我 → 编辑资料」修改</td></tr>
+  <tr><td>头像图片</td><td>在您的联系人之间显示</td><td>您主动上传;可随时更换或留空</td></tr>
+</table>
 
-  </body>
-  </html>
+<h3>2.3 消息相关(您发出/接收的内容)</h3>
+<table>
+  <tr><th>信息</th><th>用途</th><th>储存形式与时长</th></tr>
+  <tr><td>消息文字(≤ 280 字)</td><td>发送给指定联系人</td><td>服务端<strong>明文</strong>存储</td></tr>
+  <tr><td>消息图片(≤ 3 张)</td><td>发送给指定联系人</td><td>服务端 CloudBase Storage,明文</td></tr>
+  <tr><td>接收人 / 发送人 ID</td><td>投递路由</td><td>服务端</td></tr>
+  <tr><td>发送时间 / 显形时间(胶囊)</td><td>显示给收件人</td><td>服务端</td></tr>
+</table>
+
+<p><strong>消息生命周期:</strong></p>
+<ul>
+  <li>显形后 <strong>7 天</strong>:在收件人 widget 上显示;</li>
+  <li>显形后 <strong>30 天</strong>:从服务端<strong>自动彻底删除</strong>(您主动收藏的消息不参与此清理,长期保留);</li>
+  <li>撤回的消息:服务端立即清除明文字段;</li>
+  <li>您主动删除的消息:<strong>仅本机删除</strong>;若双方都删除则服务端清除;</li>
+  <li>拉黑对方时:您已发给对方未显形的消息明文立即清除。</li>
+</ul>
+
+<h3>2.4 联系人关系</h3>
+<table>
+  <tr><th>信息</th><th>用途</th><th>储存形式</th></tr>
+  <tr><td>联系人关系(双向单行)</td><td>决定谁能给您发消息</td><td>服务端,仅存对方的予光账号 ID</td></tr>
+  <tr><td>邀请码(临时)</td><td>加好友</td><td>服务端;消费或过期 14 天后清除</td></tr>
+</table>
+
+<h3>2.5 设备权限</h3>
+<p>我们仅在您<strong>主动触发</strong>对应功能时请求以下权限:</p>
+<table>
+  <tr><th>权限</th><th>触发时机</th><th>用途</th></tr>
+  <tr><td>通知</td><td>登录后</td><td>接收消息提醒</td></tr>
+  <tr><td>相册(系统照片选择器)</td><td>您点头像 / 发图片消息时</td><td><strong>仅读取您选中的那一张/几张</strong></td></tr>
+  <tr><td>相机</td><td>您点"扫一扫"加联系人 / 拍照发消息时</td><td>识别二维码 / 拍照</td></tr>
+  <tr><td>网络</td><td>全程</td><td>与服务器通信</td></tr>
+</table>
+
+<p><strong>我们不获取</strong>:通讯录、位置、麦克风、加速度计、剪贴板、健康/运动数据、跨应用追踪标识符(IDFA)。</p>
+
+<h3>2.6 我们不收集的(列举)</h3>
+<ul>
+  <li><span class="nope">❌</span> 邮箱、电话号码、真实姓名(SIWA 中我们只取 <code>sub</code> 字段)</li>
+  <li><span class="nope">❌</span> 通讯录、位置、健康/运动数据</li>
+  <li><span class="nope">❌</span> 浏览历史、跨应用追踪标识(IDFA)</li>
+  <li><span class="nope">❌</span> 其他第三方账号关联信息</li>
+</ul>
+
+<h2>三、我们如何使用您的信息</h2>
+<p>我们仅在以下范围内使用:</p>
+<ul>
+  <li>提供本服务的核心功能(账号、消息、联系人、推送、widget 更新);</li>
+  <li>维护服务安全(防滥用、配合执法、处置举报);</li>
+  <li>改进服务(<strong>仅基于聚合的、不可标识到个人的统计数据</strong>;当前版本未接入任何分析 SDK)。</li>
+</ul>
+
+<p><strong>我们承诺不会:</strong></p>
+<ul>
+  <li><span class="nope">❌</span> 主动浏览您的消息内容(除非您主动举报特定消息、或执法机关合法要求);</li>
+  <li><span class="nope">❌</span> 向第三方出售您的个人信息;</li>
+  <li><span class="nope">❌</span> 用您的信息做广告画像;</li>
+  <li><span class="nope">❌</span> 把您的信息提供给任何与本服务无关的商业实体。</li>
+</ul>
+
+<h2>四、内容审核机制</h2>
+<p>依据 Apple App Store Guideline 1.2 / 4.3 以及《网络安全法》等相关法规,我们对用户上传内容采取以下措施:</p>
+
+<h3>4.1 图片自动过滤(本地)</h3>
+<p>发送图片前,客户端使用 Apple 操作系统提供的 <code>SensitiveContentAnalysis</code> 框架对图片进行<strong>完全本地化</strong>的合规检测:</p>
+<ul>
+  <li><strong>图片不离开您的设备</strong> —— 检测过程在您 iPhone 的安全飞地内完成,我们和任何第三方都看不到原图;</li>
+  <li>检测命中敏感内容(如色情)的图片<strong>会被阻止上传</strong>,弹窗提示您更换;</li>
+  <li>未命中的图片正常进入发送流程。</li>
+</ul>
+
+<h3>4.2 用户举报</h3>
+<p>每条消息及"我"页面提供"举报违规"入口,点击后通过系统邮件 App 发送举报到联系邮箱(见 §11)。邮件自动包含:</p>
+<ul>
+  <li>您要举报的消息标识(deliveryId / messageId);</li>
+  <li>发送方账号 ID;</li>
+  <li>您的描述(您填写的文字)。</li>
+</ul>
+
+<h3>4.3 处置承诺</h3>
+<p><strong>我们承诺</strong>:收到举报后 <strong>24 小时内</strong>核实并处置违规内容/账号。处置方式包括:</p>
+<ul>
+  <li>内容下架(从服务端清除);</li>
+  <li>警告 / 临时封禁 / 永久封禁违规账号;</li>
+  <li>涉嫌违法的:配合执法机关。</li>
+</ul>
+
+<h3>4.4 拉黑(立即生效)</h3>
+<p>您可在联系人页面随时拉黑任何用户,拉黑后:</p>
+<ul>
+  <li>对方再也不能给您发消息;</li>
+  <li>您已收到他未显形的明文立即从服务端清除;</li>
+  <li>拉黑动作即时生效,无需我们审核。</li>
+</ul>
+
+<h2>五、我们如何保护您的信息</h2>
+<ul>
+  <li><strong>传输安全</strong>:所有客户端 ↔ 服务器通信均使用 HTTPS(TLS 1.2+);</li>
+  <li><strong>存储安全</strong>:服务端数据库通过 CloudBase 安全规则限制为<strong>仅云函数可读写</strong>,客户端 SDK 无法直接读写业务集合;</li>
+  <li><strong>最小权限</strong>:每个云函数只读它必须读的字段,无法批量导出用户表;</li>
+  <li><strong>访问审计</strong>:云函数所有读写操作均有日志,异常访问可追溯;</li>
+  <li><strong>凭据保护</strong>:您的 Apple Sign-In token / 推送令牌存于 Apple Keychain,使用 <code>AfterFirstUnlockThisDeviceOnly</code> 访问级别(不参与 iCloud 同步);</li>
+  <li><strong>数据本地化</strong>:数据存储于中国上海腾讯云,符合 PIPL 数据本地化要求。</li>
+</ul>
+
+<p>虽然我们尽全力保护,但请理解<strong>互联网传输不存在 100% 安全</strong>。</p>
+
+<h2>六、信息储存地点与期限</h2>
+
+<h3>6.1 储存地点</h3>
+<ul>
+  <li><strong>服务端</strong>:腾讯云 CloudBase(中国上海);</li>
+  <li><strong>客户端</strong>:您 iPhone 本地 SwiftData 数据库 + Keychain;</li>
+  <li><strong>图片</strong>:腾讯云 CloudBase Storage(中国上海)。</li>
+</ul>
+
+<h3>6.2 储存期限</h3>
+<table>
+  <tr><th>信息</th><th>期限</th></tr>
+  <tr><td>账号、昵称、头像</td><td>账号存活期间一直保留</td></tr>
+  <tr><td>消息文字 / 图片</td><td>显形后 30 天自动清理(收藏的永久保留)</td></tr>
+  <tr><td>推送令牌</td><td>账号注销立即清除</td></tr>
+  <tr><td>邀请码</td><td>消费或过期 14 天清除</td></tr>
+  <tr><td>撤回的消息</td><td>立即清除明文</td></tr>
+  <tr><td>注销账号</td><td>7 天可恢复期,超过 7 天<strong>物理删除</strong></td></tr>
+</table>
+
+<h3>6.3 跨境传输</h3>
+<p>本服务<strong>不进行</strong>个人信息跨境传输。所有数据存储于中国境内服务器。若未来开通海外区域,我们会再次征得您的同意。</p>
+
+<h2>七、您的权利(PIPL §44-50 / GDPR §15-22)</h2>
+<table>
+  <tr><th>权利</th><th>在予光如何行使</th></tr>
+  <tr><td>查阅 / 复制</td><td>「我 → 编辑资料」可查看您的昵称、头像;其他字段如需查阅,邮件联系我们</td></tr>
+  <tr><td>更正</td><td>「我 → 编辑资料」可修改昵称、头像</td></tr>
+  <tr><td>删除</td><td>「设置 → 注销账号」彻底注销(7 天回退窗口)</td></tr>
+  <tr><td>撤回同意</td><td>注销账号即视为撤回所有同意</td></tr>
+  <tr><td>数据可携带</td><td>邮件联系我们,我们将以机器可读格式(JSON)提供您的账号 + 消息数据</td></tr>
+  <tr><td>投诉举报</td><td>邮件联系我们(见 §11),24 小时内首次响应,15 个工作日内闭环</td></tr>
+</table>
+
+<h2>八、第三方服务</h2>
+<table>
+  <tr><th>第三方</th><th>用途</th><th>我们提供给它的数据</th><th>它的隐私政策</th></tr>
+  <tr><td>Apple Sign-In</td><td>您的登录</td><td>仅 Apple ID 的 <code>identityToken</code>(临时)</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple 隐私</a></td></tr>
+  <tr><td>Apple Push Notification Service (APNs)</td><td>推送通知</td><td>您的推送令牌、推送 payload(不含消息明文)</td><td>同上</td></tr>
+  <tr><td>Apple SensitiveContentAnalysis 框架</td><td>本地图片合规检测</td><td><strong>无数据传输</strong>(完全本地)</td><td>同上</td></tr>
+  <tr><td>腾讯云 CloudBase</td><td>服务端基础设施(数据库 / 云函数 / Storage)</td><td>全部服务端数据</td><td><a href="https://privacy.qq.com/" target="_blank">腾讯云隐私</a></td></tr>
+</table>
+
+<p><strong>我们未接入</strong>任何第三方广告、分析、追踪、社交登录 SDK。</p>
+
+<h2>九、关于未成年人</h2>
+<p>本服务不专门面向 <strong>14 岁以下儿童</strong>(PIPL §31)及 <strong>13 岁以下儿童</strong>(COPPA)。</p>
+<ul>
+  <li>如果您是 14 岁以下儿童,请在监护人陪同下阅读本政策并征得监护人同意;</li>
+  <li>如果您是未成年人的监护人,发现孩子在未经您许可的情况下注册了本服务,请联系我们,我们将协助删除其账号;</li>
+  <li>我们不进行年龄识别,但若发现明显违反此规则的账号,有权直接关闭。</li>
+</ul>
+
+<h2>十、政策变更</h2>
+<p>我们可能因法律法规、产品迭代、安全考虑修改本政策。</p>
+<ul>
+  <li><strong>一般变更</strong>:在应用内「设置 → 隐私政策」更新版本号与日期,继续使用即视为同意;</li>
+  <li><strong>重大变更</strong>(涉及收集字段扩大、用途变更等):在应用内<strong>显著提示</strong>并要求您重新确认;</li>
+  <li><strong>历史版本</strong>:可邮件向我们索取。</li>
+</ul>
+
+<h2>十一、联系我们</h2>
+<p>如对本政策有任何疑问、投诉、行使权利请求,请通过以下方式联系我们:</p>
+<ul>
+  <li><strong>邮箱</strong>:<a href="mailto:sealmateapp@163.com">sealmateapp@163.com</a></li>
+  <li><strong>响应时间</strong>:24 小时内首次响应;15 个工作日内闭环处理</li>
+</ul>
+
+<p>如未得到满意答复,您还可以:</p>
+<ul>
+  <li>向您所在地的<strong>国家网信办</strong>(<a href="https://www.cac.gov.cn/" target="_blank">https://www.cac.gov.cn/</a>)投诉;</li>
+  <li>向<strong>中国互联网协会 12321</strong>(<a href="https://www.12321.cn/" target="_blank">https://www.12321.cn/</a>)投诉举报;</li>
+  <li>(EU/EEA 用户)向您所在地的数据保护机关(DPA)投诉。</li>
+</ul>
+
+<h2>十二、App Store 隐私标签(Privacy Nutrition Label)对照</h2>
+<p>根据 Apple 要求,我们在 App Store Connect 申报的"App 隐私"标签如下:</p>
+<table>
+  <tr><th>数据类别</th><th>是否收集</th><th>是否关联用户</th><th>用于追踪</th><th>用途</th></tr>
+  <tr><td>联系信息(姓名 / 邮箱 / 电话)</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>健康与健身</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>金融信息</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>位置</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>敏感信息(种族 / 政治 / 健康)</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>联系人</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td><strong>用户内容(照片、消息)</strong></td><td>收集</td><td>关联用户</td><td>不用于追踪</td><td>本服务核心功能(发送/接收消息)</td></tr>
+  <tr><td>浏览历史</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>搜索历史</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td><strong>标识符(User ID / Device ID)</strong></td><td>收集</td><td>关联用户</td><td>不用于追踪</td><td>账号 / 推送</td></tr>
+  <tr><td>购买信息</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>使用数据</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>诊断(崩溃 / 性能)</td><td>1.0 暂未接入崩溃上报</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>其他</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
+</table>
+
+<hr style="margin-top:40px;border:none;border-top:1px solid #e5e5ea;" />
+<p style="color:#8e8e93;font-size:13px;text-align:center;">本政策自最后更新日期生效。本政策的最终解释权归予光所有,在不与法律抵触的情况下。</p>
+
+</body>
+</html>
