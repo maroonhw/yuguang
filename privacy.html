@@ -33,7 +33,7 @@
 <ul>
   <li><strong>尽量少收集</strong> —— 只取功能必需的最少字段;</li>
   <li><strong>不卖、不共享、不追踪</strong> —— 不向任何第三方出售/共享您的个人信息;不接入广告、分析、追踪 SDK;</li>
-  <li><strong>不读</strong> —— 服务端虽存储消息内容,但<strong>我们承诺不主动读取</strong>,除非您主动举报、或执法机关合法要求;</li>
+  <li><strong>不读</strong> —— 服务端虽存储便签内容,但<strong>我们承诺不主动读取</strong>,除非您主动举报、或执法机关合法要求;</li>
   <li><strong>本地审核</strong> —— 图片合规检测全部在您设备本地完成,图片不离开您的设备。</li>
 </ul>
 
@@ -41,7 +41,7 @@
 
 <h2>一、我们是谁</h2>
 <ul>
-  <li>本服务运营方:<strong>(待补:运营公司或开发者实名,与 App Store Connect 一致)</strong></li>
+  <li>本服务运营方:<strong>hongwei.liu</strong></li>
   <li>本政策的解释权 / 联系方式:见 §11</li>
   <li>数据存储位置:<strong>中国上海</strong>(腾讯云开发服务 / CloudBase)</li>
 </ul>
@@ -53,7 +53,7 @@
   <tr><th>信息</th><th>用途</th><th>储存形式</th><th>法律依据(PIPL)</th></tr>
   <tr><td>Apple ID 子标识(<code>sub</code> claim)</td><td>与您的予光账号绑定,识别身份</td><td>服务端,HTTPS 传输</td><td>履行合同所必需</td></tr>
   <tr><td>设备标识(派生 ID,非 IDFA)</td><td>区分您的多个设备,推送送达</td><td>服务端</td><td>履行合同所必需</td></tr>
-  <tr><td>APNs 推送令牌</td><td>接收消息推送</td><td>服务端;账号注销立即清除</td><td>履行合同所必需(可在系统设置关闭推送)</td></tr>
+  <tr><td>APNs 推送令牌</td><td>接收便签推送</td><td>服务端;账号注销立即清除</td><td>履行合同所必需(可在系统设置关闭推送)</td></tr>
 </table>
 
 <p><strong>我们不收集</strong>:您的 Apple ID 邮箱、真实姓名、电话号码、IDFA、生物特征、身份证号、银行账号。Apple Sign-In 可以选择"隐藏邮箱",我们也只取 <code>sub</code> 字段,不读 email/name。</p>
@@ -65,28 +65,28 @@
   <tr><td>头像图片</td><td>在您的联系人之间显示</td><td>您主动上传;可随时更换或留空</td></tr>
 </table>
 
-<h3>2.3 消息相关(您发出/接收的内容)</h3>
+<h3>2.3 便签相关(您发出/接收的内容)</h3>
 <table>
   <tr><th>信息</th><th>用途</th><th>储存形式与时长</th></tr>
-  <tr><td>消息文字(≤ 280 字)</td><td>发送给指定联系人</td><td>服务端<strong>明文</strong>存储</td></tr>
-  <tr><td>消息图片(≤ 3 张)</td><td>发送给指定联系人</td><td>服务端 CloudBase Storage,明文</td></tr>
+  <tr><td>便签文字(≤ 280 字)</td><td>发送给指定联系人</td><td>服务端<strong>明文</strong>存储</td></tr>
+  <tr><td>便签图片(≤ 3 张)</td><td>发送给指定联系人</td><td>服务端 CloudBase Storage,明文</td></tr>
   <tr><td>接收人 / 发送人 ID</td><td>投递路由</td><td>服务端</td></tr>
   <tr><td>发送时间 / 显形时间(胶囊)</td><td>显示给收件人</td><td>服务端</td></tr>
 </table>
 
-<p><strong>消息生命周期:</strong></p>
+<p><strong>便签生命周期:</strong></p>
 <ul>
-  <li>显形后 <strong>7 天</strong>:在收件人 widget 上显示;</li>
-  <li>显形后 <strong>30 天</strong>:从服务端<strong>自动彻底删除</strong>(您主动收藏的消息不参与此清理,长期保留);</li>
-  <li>撤回的消息:服务端立即清除明文字段;</li>
-  <li>您主动删除的消息:<strong>仅本机删除</strong>;若双方都删除则服务端清除;</li>
-  <li>拉黑对方时:您已发给对方未显形的消息明文立即清除。</li>
+  <li>显形后 <strong>7 天</strong>:在收件人 widget 上显示;之后从 widget 自动移除,但仍可在 App 内详情页查看;</li>
+  <li>服务端<strong>长期保留</strong>:已显形的便签不再到点自动清理,直至您或对方主动删除该便签,或任一方注销账号;</li>
+  <li>撤回的便签:服务端立即清除明文字段;</li>
+  <li>您主动删除的便签:发件方走 deleteMessage、收件方走 deleteDelivery;双方都删除则服务端清除;</li>
+  <li>拉黑对方时:您已发给对方未显示的便签明文立即清除。</li>
 </ul>
 
 <h3>2.4 联系人关系</h3>
 <table>
   <tr><th>信息</th><th>用途</th><th>储存形式</th></tr>
-  <tr><td>联系人关系(双向单行)</td><td>决定谁能给您发消息</td><td>服务端,仅存对方的予光账号 ID</td></tr>
+  <tr><td>联系人关系(双向单行)</td><td>决定谁能给您留便签</td><td>服务端,仅存对方的予光账号 ID</td></tr>
   <tr><td>邀请码(临时)</td><td>加好友</td><td>服务端;消费或过期 14 天后清除</td></tr>
 </table>
 
@@ -94,9 +94,9 @@
 <p>我们仅在您<strong>主动触发</strong>对应功能时请求以下权限:</p>
 <table>
   <tr><th>权限</th><th>触发时机</th><th>用途</th></tr>
-  <tr><td>通知</td><td>登录后</td><td>接收消息提醒</td></tr>
-  <tr><td>相册(系统照片选择器)</td><td>您点头像 / 发图片消息时</td><td><strong>仅读取您选中的那一张/几张</strong></td></tr>
-  <tr><td>相机</td><td>您点"扫一扫"加联系人 / 拍照发消息时</td><td>识别二维码 / 拍照</td></tr>
+  <tr><td>通知</td><td>登录后</td><td>接收便签提醒</td></tr>
+  <tr><td>相册(系统照片选择器)</td><td>您点头像 / 发图片便签时</td><td><strong>仅读取您选中的那一张/几张</strong></td></tr>
+  <tr><td>相机</td><td>您点"扫一扫"加联系人 / 拍照写便签时</td><td>识别二维码 / 拍照</td></tr>
   <tr><td>网络</td><td>全程</td><td>与服务器通信</td></tr>
 </table>
 
@@ -113,14 +113,14 @@
 <h2>三、我们如何使用您的信息</h2>
 <p>我们仅在以下范围内使用:</p>
 <ul>
-  <li>提供本服务的核心功能(账号、消息、联系人、推送、widget 更新);</li>
+  <li>提供本服务的核心功能(账号、便签、联系人、推送、widget 更新);</li>
   <li>维护服务安全(防滥用、配合执法、处置举报);</li>
   <li>改进服务(<strong>仅基于聚合的、不可标识到个人的统计数据</strong>;当前版本未接入任何分析 SDK)。</li>
 </ul>
 
 <p><strong>我们承诺不会:</strong></p>
 <ul>
-  <li><span class="nope">❌</span> 浏览您的消息内容(除非您主动举报特定消息、或执法机关合法要求);</li>
+  <li><span class="nope">❌</span> 主动浏览您的便签内容(除非您主动举报特定便签、或执法机关合法要求);</li>
   <li><span class="nope">❌</span> 向第三方出售您的个人信息;</li>
   <li><span class="nope">❌</span> 用您的信息做广告画像;</li>
   <li><span class="nope">❌</span> 把您的信息提供给任何与本服务无关的商业实体。</li>
@@ -138,9 +138,9 @@
 </ul>
 
 <h3>4.2 用户举报</h3>
-<p>每条消息及"我"页面提供"举报违规"入口,点击后通过系统邮件 App 发送举报到联系邮箱(见 §11)。邮件自动包含:</p>
+<p>每条便签及"我"页面提供"举报违规"入口,点击后通过系统邮件 App 发送举报到联系邮箱(见 §11)。邮件自动包含:</p>
 <ul>
-  <li>您要举报的消息标识(deliveryId / messageId);</li>
+  <li>您要举报的便签标识(deliveryId / messageId);</li>
   <li>发送方账号 ID;</li>
   <li>您的描述(您填写的文字)。</li>
 </ul>
@@ -156,7 +156,7 @@
 <h3>4.4 拉黑(立即生效)</h3>
 <p>您可在联系人页面随时拉黑任何用户,拉黑后:</p>
 <ul>
-  <li>对方再也不能给您发消息;</li>
+  <li>对方再也不能给您留便签;</li>
   <li>您已收到他未显形的明文立即从服务端清除;</li>
   <li>拉黑动作即时生效,无需我们审核。</li>
 </ul>
@@ -186,10 +186,10 @@
 <table>
   <tr><th>信息</th><th>期限</th></tr>
   <tr><td>账号、昵称、头像</td><td>账号存活期间一直保留</td></tr>
-  <tr><td>消息文字 / 图片</td><td>显形后 30 天自动清理(收藏的永久保留)</td></tr>
+  <tr><td>便签文字 / 图片</td><td>长期保留,直至您主动删除或注销账号</td></tr>
   <tr><td>推送令牌</td><td>账号注销立即清除</td></tr>
   <tr><td>邀请码</td><td>消费或过期 14 天清除</td></tr>
-  <tr><td>撤回的消息</td><td>立即清除明文</td></tr>
+  <tr><td>撤回的便签</td><td>立即清除明文</td></tr>
   <tr><td>注销账号</td><td>7 天可恢复期,超过 7 天<strong>物理删除</strong></td></tr>
 </table>
 
@@ -203,7 +203,7 @@
   <tr><td>更正</td><td>「我 → 编辑资料」可修改昵称、头像</td></tr>
   <tr><td>删除</td><td>「设置 → 注销账号」彻底注销(7 天回退窗口)</td></tr>
   <tr><td>撤回同意</td><td>注销账号即视为撤回所有同意</td></tr>
-  <tr><td>数据可携带</td><td>邮件联系我们,我们将以机器可读格式(JSON)提供您的账号 + 消息数据</td></tr>
+  <tr><td>数据可携带</td><td>邮件联系我们,我们将以机器可读格式(JSON)提供您的账号 + 便签数据</td></tr>
   <tr><td>投诉举报</td><td>邮件联系我们(见 §11),24 小时内首次响应,15 个工作日内闭环</td></tr>
 </table>
 
@@ -211,7 +211,7 @@
 <table>
   <tr><th>第三方</th><th>用途</th><th>我们提供给它的数据</th><th>它的隐私政策</th></tr>
   <tr><td>Apple Sign-In</td><td>您的登录</td><td>仅 Apple ID 的 <code>identityToken</code>(临时)</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple 隐私</a></td></tr>
-  <tr><td>Apple Push Notification Service (APNs)</td><td>推送通知</td><td>您的推送令牌、推送 payload(不含消息明文)</td><td>同上</td></tr>
+  <tr><td>Apple Push Notification Service (APNs)</td><td>推送通知</td><td>您的推送令牌、推送 payload(不含便签明文)</td><td>同上</td></tr>
   <tr><td>Apple SensitiveContentAnalysis 框架</td><td>本地图片合规检测</td><td><strong>无数据传输</strong>(完全本地)</td><td>同上</td></tr>
   <tr><td>腾讯云 CloudBase</td><td>服务端基础设施(数据库 / 云函数 / Storage)</td><td>全部服务端数据</td><td><a href="https://privacy.qq.com/" target="_blank">腾讯云隐私</a></td></tr>
 </table>
@@ -258,7 +258,7 @@
   <tr><td>位置</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>敏感信息(种族 / 政治 / 健康)</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>联系人</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
-  <tr><td><strong>用户内容(照片、消息)</strong></td><td>收集</td><td>关联用户</td><td>不用于追踪</td><td>本服务核心功能(发送/接收消息)</td></tr>
+  <tr><td><strong>用户内容(照片、便签)</strong></td><td>收集</td><td>关联用户</td><td>不用于追踪</td><td>本服务核心功能(发送/接收便签)</td></tr>
   <tr><td>浏览历史</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>搜索历史</td><td>不收集</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td><strong>标识符(User ID / Device ID)</strong></td><td>收集</td><td>关联用户</td><td>不用于追踪</td><td>账号 / 推送</td></tr>
